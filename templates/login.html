@@ -1,0 +1,35 @@
+<!-- templates/login.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinn Tech</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="static/login.css">
+</head>
+<body>
+    <div class="login-container">
+        <h3>Welcome Back</h3>
+        <form class="login-form" action="/auth/token" method="post">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="options">
+                <button class="login-button" type="submit">Login</button>
+            </div>
+        </form>
+        <div class="options">
+            <label for="remember">
+                <input type="checkbox" id="remember" name="remember"> Lembrar senha
+            </label>
+            <a href="#" class="forgot-password">Esqueceu a senha?</a>
+        </div>
+    </div>
+</body>
+</html>
